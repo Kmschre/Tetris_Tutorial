@@ -51,7 +51,7 @@ function draw() {
 }
 
 
-draw()
+draw();
 
 
 })
