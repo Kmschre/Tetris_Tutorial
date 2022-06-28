@@ -1,17 +1,44 @@
+.container {
+    display: flex;
+}
+
 .grid {
     width: 200px;
     height: 400px;
-    background-color: rgba(195, 197, 199, 0.993);
+    background-color: rgba(167, 169, 171, 0.993);
     display: flex;
     flex-wrap: wrap;
+    border-style: inset;
+    border-color: rgb(17, 17, 18);
+    
 }
 
 .grid div {
     height: 20px;
     width: 20px;
     
+    
 }
 
 .tetromino {
     background-color: rgb(204, 161, 244);
+    
+}
+
+.mini-grid {
+    margin-left: 50px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(188, 197, 244);
+    border-style:inset;
+    border-color: rgb(10, 10, 10);
+    
+}
+
+.mini-grid div {
+    height: 20px;
+    width: 20px;
+    
 }
