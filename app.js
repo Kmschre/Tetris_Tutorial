@@ -148,9 +148,30 @@ function rotate() {
     if (currentRotation === current.length) { //if current rotation gets to 4, makes it go back to 0
         currentRotation = 0
     }
+    //current = theTetrominoes[random][currentRotation]
+    if (current.some(index =>(currentPosition + index) % width === 0)) {
+        currentPosition += 1
+    }
+     else if (current.some(index =>(currentPosition + index) % width === width - 1)) {
+        currentPosition -=2
+    }
     current = theTetrominoes[random][currentRotation]
+
     draw()
 }
+//Fixed edge case issue, need to figure out a "Valid move" option
+
+
+
+
+
+
+
+
+
+
+
+
 //show up-coming tetromino in mini-grid display
 const displaySquares = document.querySelectorAll('.mini-grid div')
 const displayWidth = 4
