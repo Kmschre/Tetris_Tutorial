@@ -4,10 +4,12 @@ body { background-color: rgb(218, 234, 241);
 
 h1 {
    font-family: 'Hurricaine', cursive;
-
+    display: flex;
+   
 }
 .container {
     display: flex;
+   
 }
 
 .grid {
@@ -48,3 +50,4 @@ h1 {
     width: 20px;
     
 }
+

@@ -163,15 +163,6 @@ function rotate() {
 
 
 
-
-
-
-
-
-
-
-
-
 //show up-coming tetromino in mini-grid display
 const displaySquares = document.querySelectorAll('.mini-grid div')
 const displayWidth = 4
@@ -234,7 +225,7 @@ function addScore() {
 // game over
 function gameOver() {
     if(current.some(index => squares[currentPosition + index].classList.contains('taken'))) {
-        ScoreDisplay.innerHTML = ' Game Over, Good Try!'
+        ScoreDisplay.innerHTML = ' Game Over, Nice Try!'
         clearInterval(timerId) 
         
     } 
